@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="../../favicon.ico" type="image/jpeg">
+
+	<title>wrapper online remastered home</title>
+	<meta name="description" content="Wrapper Online Remastered is the website edition to wrapper online.
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Wrapper Online Gold Home" />
+	<meta property="og:description" content="Wrapper Online Remastered is the website edition to wrapper online. />
+	<meta property="og:url" content="https://wrapper.online/" />
+	<meta property="og:image:secure_url" content="favicon.ico" /> 
+	<meta property="og:image:" content="favicon.ico" /> 
+	<meta name="theme-color" content="#FF0080">
+	<link rel="stylesheet" type="text/css" href="../css/modern-normalize.css">
+	<link rel="stylesheet" type="text/css" href="../css/global.css">
+	<link rel="stylesheet" type="text/css" href="../css/list.css">
+</head>
+<body>
+
+<header>
+	<h1 style="margin:0"><img id="logo" src="../img/logoremastered.png" alt="Wrapper: Online"/></h1>
+	<nav id="headbuttons">
+		<div class="dropdown_contain button_small">
+	<div onclick="window.location.href = 'https://wrapper-online-gold2.herokuapp.com'" class="dropdown_button" style="background: gold;">GOLD MAKER</div>
+	</div>
+	<div class="dropdown_contain button_small">
+			<div class="dropdown_button">ONLINE GEN.</div>
+			<nav class="dropdown_menu">
+				<a href="gen_ban.html">goanimate-wrapper "oh no! i got patched!" generator</a>
+				<a href="gen_playbutton.html">YouTube Play Button generator</a>
+				<a href="gen_naughty.html">Santa writes naughty or nice list?</a>
+			</nav>
+		</div>
+	<div class="dropdown_contain button_small">
+	<div class="dropdown_button">MISCELLANEOUS</div>
+			<nav class="dropdown_menu">
+				<a href="list.html" title="Wrapper Online: Remastered. Danielius Edition.">New Version (WORDE)</a>
+				<a href="makevid.html" title="GoAnimate for Schools Remastered: Unpatchable">Old Version (GA4SRU)</a>
+				<a href="loskie.html">Kill Loskythecopydog77</a>
+				<a href="acs.html">Microsoft Agent Demo</a>
+				<a href="#" onclick="document.cookie.split(" ;").foreach(function(c)="" {="" document.cookie="c.replace(/^" +="" ,="" "").replace(="" =.*="" '=";expires='" new="" date().toutcstring()="" ';path="/');" });"="">CLEAR ALL COOKIES DANGEROUSLY</a>
+			</nav>
+		</div>
+		
+		        <div class="dropdown_contain button_small">
+			<div class="dropdown_button" onclick="window.location.href = '../cc?themeId=family&amp;bs=adam'">CREATE A CHARACTER</div>
+			<nav class="dropdown_menu">
+			<h2>Business Friendly</h2>
+					<a href="/cc?themeId=business&amp;bs=default">Business (Male)</a>
+					<a href="/cc?themeId=business&amp;bs=heavy">Heavy (Female)</a>
+					<a href="/cc?themeId=business&amp;bs=kid">Kid (Child)</a>
+				<h2>Whiteboard</h2>
+					<a href="/cc?themeId=whiteboard&amp;bs=default">Whiteboard (High)</a>
+					<a href="/cc?themeId=whiteboard&amp;bs=kid">Whiteboard (Small)</a>
+				<h2>Comedy World</h2>
+				<a href="/cc?themeId=family&amp;bs=adam">Guy (Adam)</a>
+				<a href="/cc?themeId=family&amp;bs=eve">Girl (Eve)</a>
+				<a href="/cc?themeId=family&amp;bs=bob">Fat (Bob)</a>
+				<a href="/cc?themeId=family&amp;bs=rocky">Strong (Rocky)</a>
+				<hr>
+				<h2>Anime</h2>
+				<a href="/cc?themeId=anime&amp;bs=guy">Guy</a>
+				<a href="/cc?themeId=anime&amp;bs=girl">Girl</a>
+				<a href="/cc?themeId=ninjaanime&amp;bs=guy">Guy (Ninja)</a>
+				<a href="/cc?themeId=ninjaanime&amp;bs=girl">Girl (Ninja)</a>
+				<hr>
+				<h2>Peepz</h2>
+				<a href="/cc?themeId=cc2&amp;bs=default">Lil' Peepz</a>
+				<a href="/cc?themeId=chibi&amp;bs=default">Chibi' Peepz</a>
+				<a href="/cc?themeId=ninja&amp;bs=default">Chibi' Ninjas</a>
+				<hr>
+				<h2>Space Citizen</h2>
+				<a href="/cc?themeId=spacecitizen&amp;bs=guy">Space Citizen (Guy)</a>
+				<a href="/cc?themeId=spacecitizen&amp;bs=girl">Space Citizen (Girl)</a>
+				<a href="/cc?themeId=spacecitizen&amp;bs=muscular_guy">Space Citizen (Muscular)</a>
+			</nav>
+		</div>
+		<a href="/go_full" class="button_big">MAKE A VIDEO</a>
+	</nav>
+</header>
+
+<main>
+	<table>
+		<thead>
+			<tr>
+				<td></td>
+				<td>Video Title</td>
+				<td>Last Modified</td>
+				<td></td>
+			</tr>
+		</thead>
+		<tbody></tbody>
+		<tfoot>
+			<tr>
+				<td colspan="127"><a id="load_more" href="javascript:;">LOAD MORE...</a></td>
+			</tr>
+		</tfoot>
+	</table>
+</main>
+
+<footer>
+	<nav id="foot-left">
+		<a href="https://discord.gg/goanimate">GoAnimate City Discord</a>
+	</nav>
+
+	<nav id="foot-right">
+		<a href="https://wrapper.online">Server Page</a>
+		<a href="https://wrapper.online/caillou.html">Caillou</a>
+	</nav>
+</footer>
+
+
+
+</form>
+
+</body>
+
+<script>
+	const closeReq = new XMLHttpRequest();
+	closeReq.open('GET', '/events/close');
+	closeReq.send();
+
+	var json;
+	var tbody = document.getElementsByTagName('tbody')[0];
+	var loadMore = document.getElementById('load_more');
+	const listReq = new XMLHttpRequest();
+	listReq.open('GET', '/movieList');
+	listReq.send();
+
+	var C = 0;
+	function loadRows() {
+		let c = C; C += 69;
+		for (; c < C; c++) {
+			if (c > json.length - 1) {
+				loadMore.remove();
+				break;
+			}
+
+			const tbl = json[c];
+			const date = tbl.date.substr(0, 10) + ' ' + tbl.date.substr(11);
+			tbody.insertAdjacentHTML('beforeend',
+				'<tr><td><img src="/movie_thumbs/' + tbl.id + '"></td><td><div>' + tbl.title + '</div><div>' + tbl.durationString + '</div></div></td><td><span>' + date.match(/./g).join('</span><span>') + '</span></td><td><a href="javascript:;" onclick="popup(\'' + tbl.id + '\')"></a><a href="/go_full?movieId=' + tbl.id + '"></a><a href="/movies/' + tbl.id + '.xml" download="' + tbl.title + '"></a></td></tr>');
+		}
+	}
+
+	loadMore.onclick = loadRows;
+	listReq.onreadystatechange = function (e) {
+		if (listReq.readyState != 4) return;
+		json = JSON.parse(listReq.responseText);
+		loadRows();
+	}
+
+	function popup(id) {
+		window.open('/player?movieId=' + id, 'MsgWindow', 'width=1280,height=720,left=' + (screen.width / 2 - 640) + ',top=' + (screen.height / 2 - 360));
+	}
+</script>
+
+</html>

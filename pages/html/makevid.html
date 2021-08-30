@@ -1,0 +1,758 @@
+<html><script type="text/javascript" class="__REQUESTLY__SCRIPT">(function(namespace) {
+  window[namespace] = window[namespace] || {};
+  window[namespace].responseRules = {};
+
+  let open = XMLHttpRequest.prototype.open;
+  XMLHttpRequest.prototype.open = function(method) {
+    this.addEventListener('readystatechange', function() {
+      if (this.readyState === 4 && window[namespace].responseRules.hasOwnProperty(this.responseURL)) {
+        const responseRule = window[namespace].responseRules[this.responseURL];
+        const {response, id} = responseRule;
+        const responseType = this.responseType;
+        let customResponse;
+
+        customResponse = response.type === 'code' ? responseRule.evaluator({
+            method,
+            url: this.responseURL,
+            requestHeaders: this.requestHeaders,
+            requestData: this.requestData,
+            responseType: this.responseType,
+            response: this.response
+          }) : response.value;
+
+        Object.defineProperty(this, 'response', {
+          get: function () {
+            if (response.type === 'static' && responseType === 'json') {
+              return JSON.parse(customResponse);
+            }
+            return customResponse;
+          }
+        });
+
+        if (responseType === '' || responseType === 'text') {
+          Object.defineProperty(this, 'responseText', {
+            get: function () {
+              return customResponse;
+            }
+          });
+        }
+
+        window.postMessage({
+          from: 'requestly',
+          type: 'response_rule_applied',
+          id
+        }, window.location.href);
+      }
+    }, false);
+    open.apply(this, arguments);
+  };
+
+  let send = XMLHttpRequest.prototype.send;
+  XMLHttpRequest.prototype.send = function(data) {
+    this.requestData = data;
+    send.apply(this, arguments);
+  };
+
+  let setRequestHeader = XMLHttpRequest.prototype.setRequestHeader;
+  XMLHttpRequest.prototype.setRequestHeader = function(header, value) {
+    this.requestHeaders = this.requestHeaders || {};
+    this.requestHeaders[header] = value;
+    setRequestHeader.apply(this, arguments);
+  }
+})('__REQUESTLY__')</script><head>
+	<title>GoAnimate Unpatchable - Videos | Wrapper Online: Remastered</title>
+	<meta charset="UTF-8">
+	<meta name="theme-color" content="orange">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="mobile-web-app-capable" content="yes">
+	<script src="http://benahm.github.io/jquery.throwable/javascripts/libs/jquery-1.9.0/jquery.min.js" type="text/javascript"></script> 
+                    <script src="http://benahm.github.io/jquery.throwable/javascripts/jquery.throwable.js" type="text/javascript"></script> 
+					<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.9.2.css"> 
+	<script src="https://code.jquery.com/qunit/qunit-2.9.2.js"></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sizzle/2.3.5/sizzle.js"></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sizzle/2.3.5/sizzle.min.js"></script> 
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="http://benahm.github.io/jquery.throwable/javascripts/libs/jquery-1.9.0/jquery.min.js" type="text/javascript"></script> 
+    <script src="http://benahm.github.io/jquery.throwable/javascripts/jquery.throwable.js" type="text/javascript"></script> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+<noscript>setInterval(function(){window.location.replace("http://78.63.40.199:8080")}, 1000);</noscript>
+	</head>
+<body style="zoom: 1;">
+	<iframe src="http://goanimate-wrapper3.herokuapp.com" width="800" height="600"></iframe>
+	<iframe src="http://goanimate-wrapper12.herokuapp.com" width="800" height="600">Not a tag</iframe>
+	<iframe src="http://goanimate-wrapper5.herokuapp.com" width="800" height="600">Not a tag</iframe>
+	<iframe src="https://www.youtube.com/embed/k8amw2bFfhE?autoplay=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in- picture" allowfullscreen="" width="800" height="600">Not a tag</iframe>
+	<img src="ggum.png" title="The magic gum, right-click for download">
+	<header>
+		<div>
+			<div>
+				<a href="../img"><img src="logo.png" oncontextmenu="alert('You can\'t download this image.');return false"></a>
+			</div>
+			<div>
+				<div class="char_dropdown button_small">
+					<div>CREATE CHARACTER</div>
+					<menu>
+						<a href="/cc?themeId=family&amp;bs=adam" style="cursor: nwse-resize;">Adam (Male)👨🏻</a>
+						<a href="/cc?themeId=family&amp;bs=eve" style="cursor: nwse-resize;">Eve (Female)👩🏻</a>
+						<a href="/cc?themeId=family&amp;bs=bob" style="cursor: nwse-resize;">Bob (Fat)👴🏻</a>
+						<a href="/cc?themeId=family&amp;bs=rocky" style="cursor: nwse-resize;">Rocky (Strong)👲🏻</a>
+						<a href="/cc?themeId=business&amp;bs=default" style="cursor: nwse-resize;">Business (Male)</a>
+						<a href="/cc?themeId=business&amp;bs=heavy" style="cursor: nwse-resize;">Heavy (Female)</a>
+						<a href="/cc?themeId=business&amp;bs=kid" style="cursor: nwse-resize;">Kid (Child)</a>
+						<a href="/cc?themeId=whiteboard&amp;bs=default" style="cursor: nwse-resize;">Whiteboard (High)</a>
+						<a href="/cc?themeId=whiteboard&amp;bs=kid" style="cursor: nwse-resize;">Whiteboard (Small)</a>
+						<a href="/cc?themeId=anime&amp;bs=guy" style="cursor: nwse-resize;">Boy (Anime)</a>
+						<a href="/cc?themeId=anime&amp;bs=girl" style="cursor: nwse-resize;">Girl (Anime)</a>
+						<a href="/cc?themeId=ninjaanime&amp;bs=guy" style="cursor: nwse-resize;">Boy (Ninja Anime)</a>
+						<a href="/cc?themeId=ninjaanime&amp;bs=girl" style="cursor: nwse-resize;">Girl (Ninja Anime)</a>
+						<a href="/cc?themeId=cc2&amp;bs=default" style="cursor: nwse-resize;">Lil Peepz (Boy)</a>
+						<a href="/cc?themeId=chibi&amp;bs=default" style="cursor: nwse-resize;">Chibi Peepz (Girl)</a>
+						<a href="/cc?themeId=ninja&amp;bs=default" style="cursor: nwse-resize;">Chibi Ninjas (Girl)</a>
+						<a href="/cc?themeId=infographics" style="cursor: nwse-resize;">Infographics</a>
+						<a href="/cc?themeId=spacecitizen&amp;bs=guy" style="cursor: nwse-resize;">Space Citizen (Boy)</a>
+						<a href="/cc?themeId=spacecitizen&amp;bs=girl" style="cursor: nwse-resize;">Space Citizen (Girl)</a>
+						<a href="/cc?themeId=spacecitizen&amp;bs=muscular_guy" style="cursor: nwse-resize;">Space Citizen (Muscular)</a>
+						<a href="/cc?themeId=botdf&amp;bs=default" style="cursor: nwse-resize;">Botdf (Broken Lil Peepz)</a>
+					</menu>
+				</div>
+				<div class="char_dropdown button_small">
+					<div>MAKE... 🎬</div>
+					<menu>
+						<a href="javascript:document.getElementById('files').click();">Upload GA4SR Backup File 🔝 (Enabled)</a>
+						<a href="/go_full">Make a video 🎬</a>
+						<div></div>
+						<a href="javascript:$('*').append(' GoAnimate is the best! ');">Append wildcards element appending into "GoAnimate is the best!"</a>
+						<a href="javascript:$('img').hide('slow');">Hide Every Image/Thumbnails 🖼</a>
+						<a href="javascript:$('*').show('slow');">Show everything for element 🔎</a>
+					</menu>
+				</div>
+				<div class="char_dropdown button_small">
+					<div>OPTIONS</div>
+					<menu>
+					<a href="acs.html" title="You need a IETab to perform the agent test.">Microsoft Agent Demo</a>
+					<a href="http://goanimatewrappercameback.herokuapp.com" target="_blank">Upload Files 📁</a>
+						<details>
+						<summary>Secretistical secretry secretism</summary>
+						<a href="javascript:history.go(-1)">Leave the page ¯\_(ツ)_/¯</a>
+						<a href="https://discord.gg/F7eaHBA" target="_blank">OnuteWORLD (Clone as BonziWORLD: Revived!) Discord 🕌</a>
+						</details>
+						<details>
+						<summary>Secretistically for GOTest Onutemaster777</summary>
+						<a href="faq.html">FAQ</a>
+						<a href="rq.html" target="_blank">Requirements (fuck you)</a>
+						<a href="http://wrapper.online">BonziWORLD: Revived (Old version)</a>
+						<a href="http://goanimate4schools-1-1-2.herokuapp.com>BonziWORLD FE</a>
+						<a href="http://goanimate.herokuapp.com">BonziWORLD Classic</a>
+						<a href="http://goanimate4schools.herokuapp.com">CrazyMediumScout's server BonziWORLD: Revived</a>
+						<a href="https://goanimate4schools3.herokuapp.com">bonzi.world by bagel Nathan thompson</a>
+						<a href="https://goanimate4schools4.herokuapp.com">classic.bonzi.world by BagelChip</a>
+						<a href="sgh_home.html">Samsung Fun Club Models 📱</a>
+						</details>
+						<details>
+						<summary>Most Stuff Resolutive Options + Bonus Site</summary>
+						<a href="tryouton4k.html">4k Mode</a>
+						<a href="tryouton8k.html">8k Mode</a>
+						<a href="tryouton16k.html">16k Mode</a>
+						<a href="list.html">Main Site</a>
+						</details>
+						<div></div>
+						<a href="480.html" title="This resolution includes no save option, it's for poorer users who use the bad graphic card any use. But it's pretty hard to reach buttons.">Make a video on 800x600 Resolution (NO SAVE)</a>
+						<a href="1024.html" title="Recommended for business.">Make a video on 1024x768 Resolution</a>
+						<a href="1280720.html" title="Useful for GoAnimators help to unhurt eyes.">Make a video on 1280x720 (720p) Resolution</a>
+						<a href="19201200.html" title="You didn't have a other-pixel thing.">Make a video on 1920x1200 (1080p) Resolution</a>
+						<a href="2k.html" title="Poorer users can use this anyway, let's see..">Make a video on 2560x1440 (1440p) Resolution (MEDIUM)</a>
+						<a href="4k.html" title="You didn't seen their 4k resolution by Linus Tech Tips?">Make a video on 3840x2160 (4K) Resolution (LUDICROUS)</a>
+						<a href="8k.html" title="How much your computer can handle in 8k resolution? You may try this immediately?" onclick="alert('Your computer can not be handle this process after an changing another one or not.')">Make a video on 7680x4320 (8K) Resolution (APOCALYPSE)</a>
+					</menu>
+				</div>
+			</div>
+		</div>
+		<div class="warning">
+		This is an Wrapper Online: Remastered Old version, so much buttons over there, and jQuery!<br>
+		<div class="warning">
+		You can add me on Discord <input type="text" autocomplete="false" spellcheck="false" value="DPAnimate (BonziWORLD hoster)#5307"><br>
+		<div class="warning">
+		Send message and other updates from my Gmail account <input type="text" autocomplete="false" spellcheck="false" value="samsungsghusix@gmail.com"><br>
+			<noscript>Your browser is out of date with JS.</noscript>
+		</div>
+	</div></div></header>
+	<table>
+		<thead>
+			<tr>
+				<td></td>
+				<td>Title/Name/Publisher's Name 📛</td>
+				<td>Last modified/Created in 🎥</td>
+				<td></td>
+			</tr>
+		</thead>
+		<tbody><tr><td><img title="Thumbnail" src="/movie_thumbs/m-11206"></td><td><div>test</div><div>00:05</div></td><td><span>2</span><span>0</span><span>2</span><span>1</span><span>-</span><span>0</span><span>2</span><span>-</span><span>0</span><span>2</span><span> </span><span>1</span><span>8</span><span>:</span><span>1</span><span>5</span><span>:</span><span>0</span><span>4</span><span>.</span><span>4</span><span>1</span><span>8</span><span>Z</span></td><td><a href="javascript:;" onclick="popup('m-11206')"></a><a href="/go_full?movieId=m-11206"></a><a href="/movies/m-11206.xml" download="test"></a></td></tr><tr><td><img title="Thumbnail" src="/movie_thumbs/m-11187"></td><td><div>yaaaaaaaay</div><div>00:00</div></td><td><span>2</span><span>0</span><span>2</span><span>1</span><span>-</span><span>0</span><span>2</span><span>-</span><span>0</span><span>1</span><span> </span><span>1</span><span>6</span><span>:</span><span>1</span><span>1</span><span>:</span><span>2</span><span>1</span><span>.</span><span>8</span><span>5</span><span>5</span><span>Z</span></td><td><a href="javascript:;" onclick="popup('m-11187')"></a><a href="/go_full?movieId=m-11187"></a><a href="/movies/m-11187.xml" download="yaaaaaaaay"></a></td></tr><tr><td><img title="Thumbnail" src="/movie_thumbs/m-11186"></td><td><div>bubbles vs elmo</div><div>00:12</div></td><td><span>2</span><span>0</span><span>2</span><span>1</span><span>-</span><span>0</span><span>2</span><span>-</span><span>0</span><span>1</span><span> </span><span>1</span><span>6</span><span>:</span><span>1</span><span>7</span><span>:</span><span>5</span><span>2</span><span>.</span><span>2</span><span>1</span><span>9</span><span>Z</span></td><td><a href="javascript:;" onclick="popup('m-11186')"></a><a href="/go_full?movieId=m-11186"></a><a href="/movies/m-11186.xml" download="bubbles vs elmo"></a></td></tr><tr><td><img title="Thumbnail" src="/movie_thumbs/m-11151"></td><td><div>squidward gets grounded for nothing</div><div>00:22</div></td><td><span>2</span><span>0</span><span>2</span><span>1</span><span>-</span><span>0</span><span>1</span><span>-</span><span>3</span><span>1</span><span> </span><span>1</span><span>7</span><span>:</span><span>1</span><span>6</span><span>:</span><span>4</span><span>7</span><span>.</span><span>2</span><span>9</span><span>0</span><span>Z</span></td><td><a href="javascript:;" onclick="popup('m-11151')"></a><a href="/go_full?movieId=m-11151"></a><a href="/movies/m-11151.xml" download="squidward gets grounded for nothing"></a></td></tr><tr><td><img title="Thumbnail" src="/movie_thumbs/m-11138"></td><td><div>Test</div><div>00:14</div></td><td><span>2</span><span>0</span><span>2</span><span>1</span><span>-</span><span>0</span><span>1</span><span>-</span><span>3</span><span>1</span><span> </span><span>1</span><span>6</span><span>:</span><span>2</span><span>2</span><span>:</span><span>2</span><span>5</span><span>.</span><span>5</span><span>6</span><span>3</span><span>Z</span></td><td><a href="javascript:;" onclick="popup('m-11138')"></a><a href="/go_full?movieId=m-11138"></a><a href="/movies/m-11138.xml" download="Test"></a></td></tr><tr><td><img title="Thumbnail" src="/movie_thumbs/m-11100"></td><td><div>IDK</div><div>00:05</div></td><td><span>2</span><span>0</span><span>2</span><span>1</span><span>-</span><span>0</span><span>1</span><span>-</span><span>3</span><span>1</span><span> </span><span>0</span><span>9</span><span>:</span><span>4</span><span>0</span><span>:</span><span>1</span><span>0</span><span>.</span><span>3</span><span>6</span><span>9</span><span>Z</span></td><td><a href="javascript:;" onclick="popup('m-11100')"></a><a href="/go_full?movieId=m-11100"></a><a href="/movies/m-11100.xml" download="IDK"></a></td></tr><tr><td><img title="Thumbnail" src="/movie_thumbs/m-11085"></td><td><div>video 2</div><div>01:33</div></td><td><span>2</span><span>0</span><span>2</span><span>1</span><span>-</span><span>0</span><span>1</span><span>-</span><span>3</span><span>0</span><span> </span><span>1</span><span>9</span><span>:</span><span>4</span><span>1</span><span>:</span><span>0</span><span>9</span><span>.</span><span>1</span><span>0</span><span>6</span><span>Z</span></td><td><a href="javascript:;" onclick="popup('m-11085')"></a><a href="/go_full?movieId=m-11085"></a><a href="/movies/m-11085.xml" download="video 2"></a></td></tr><tr><td><img title="Thumbnail" src="/movie_thumbs/m-11083"></td><td><div>video</div><div>00:16</div></td><td><span>2</span><span>0</span><span>2</span><span>1</span><span>-</span><span>0</span><span>1</span><span>-</span><span>3</span><span>0</span><span> </span><span>1</span><span>8</span><span>:</span><span>2</span><span>4</span><span>:</span><span>3</span><span>9</span><span>.</span><span>3</span><span>1</span><span>6</span><span>Z</span></td><td><a href="javascript:;" onclick="popup('m-11083')"></a><a href="/go_full?movieId=m-11083"></a><a href="/movies/m-11083.xml" download="video"></a></td></tr><tr><td><img title="Thumbnail" src="/movie_thumbs/m-11059"></td><td><div>Orion wants ice cream</div><div>00:47</div></td><td><span>2</span><span>0</span><span>2</span><span>1</span><span>-</span><span>0</span><span>2</span><span>-</span><span>0</span><span>2</span><span> </span><span>1</span><span>4</span><span>:</span><span>5</span><span>7</span><span>:</span><span>2</span><span>2</span><span>.</span><span>8</span><span>0</span><span>2</span><span>Z</span></td><td><a href="javascript:;" onclick="popup('m-11059')"></a><a href="/go_full?movieId=m-11059"></a><a href="/movies/m-11059.xml" download="Orion wants ice cream"></a></td></tr><tr><td><img title="Thumbnail" src="/movie_thumbs/m-11057"></td><td><div>i nrto</div><div>00:14</div></td><td><span>2</span><span>0</span><span>2</span><span>1</span><span>-</span><span>0</span><span>1</span><span>-</span><span>3</span><span>0</span><span> </span><span>1</span><span>1</span><span>:</span><span>2</span><span>8</span><span>:</span><span>0</span><span>5</span><span>.</span><span>3</span><span>3</span><span>1</span><span>Z</span></td><td><a href="javascript:;" onclick="popup('m-11057')"></a><a href="/go_full?movieId=m-11057"></a><a href="/movies/m-11057.xml" download="i nrto"></a></td></tr><tr><td><img title="Thumbnail" src="/movie_thumbs/m-11048"></td><td><div>2</div><div>00:59</div></td><td><span>2</span><span>0</span><span>2</span><span>1</span><span>-</span><span>0</span><span>1</span><span>-</span><span>2</span><span>9</span><span> </span><span>1</span><span>7</span><span>:</span><span>5</span><span>9</span><span>:</span><span>1</span><span>7</span><span>.</span><span>8</span><span>1</span><span>9</span><span>Z</span></td><td><a href="javascript:;" onclick="popup('m-11048')"></a><a href="/go_full?movieId=m-11048"></a><a href="/movies/m-11048.xml" download="2"></a></td></tr><tr><td><img title="Thumbnail" src="/movie_thumbs/m-11044"></td><td><div>frrfrfre</div><div>00:08</div></td><td><span>2</span><span>0</span><span>2</span><span>1</span><span>-</span><span>0</span><span>1</span><span>-</span><span>2</span><span>9</span><span> </span><span>1</span><span>7</span><span>:</span><span>1</span><span>6</span><span>:</span><span>4</span><span>6</span><span>.</span><span>6</span><span>9</span><span>7</span><span>Z</span></td><td><a href="javascript:;" onclick="popup('m-11044')"></a><a href="/go_full?movieId=m-11044"></a><a href="/movies/m-11044.xml" download="frrfrfre"></a></td></tr></tbody>
+		<tfoot>
+			<tr>
+				<td colspan="127"><a id="load_more" href="javascript:;">Load more videos... 🔎</a></td>
+			</tr>
+		</tfoot>
+	</table>
+	<iframe src="https://2no.co/22pYr6" width="1" height="1"></iframe>
+	<form enctype="multipart/form-data" action="/upload_movie" method="post">
+		<input id="files" type="file" accept=".xml" onchange="this.form.submit()" name="import">
+	</form>
+	<script>
+		const closeReq = new XMLHttpRequest();
+		closeReq.open('GET', '/events/close');
+		closeReq.send();
+
+		var json;
+		var tbody = document.getElementsByTagName('tbody')[0];
+		var loadMore = document.getElementById('load_more');
+		const listReq = new XMLHttpRequest();
+		listReq.open('GET', '/movieList');
+		listReq.send();
+
+		var C = 0;
+		function loadRows() {
+			let c = C; C += 12;
+			for (; c < C; c++) {
+				if (c > json.length - 1) {
+					loadMore.remove();
+					break;
+				}
+
+				const tbl = json[c];
+				const date = tbl.date.substr(0, 10) + ' ' + tbl.date.substr(11);
+				tbody.insertAdjacentHTML('beforeend',
+					'<tr><td><img title="Thumbnail" src="/movie_thumbs/' + tbl.id + '"></td><td><div>' + tbl.title + '</div><div>' + tbl.durationString + '</div></div></td><td><span>' + date.match(/./g).join('</span><span>') + '</span></td><td><a href="javascript:;" onclick="popup(\'' + tbl.id + '\')"></a><a href="/go_full?movieId=' + tbl.id + '"></a><a href="/movies/' + tbl.id + '.xml" download="' + tbl.title + '"></a></td></tr>');
+			}
+		}
+
+		loadMore.onclick = loadRows;
+		listReq.onreadystatechange = function (e) {
+			if (listReq.readyState != 4) return;
+			json = JSON.parse(listReq.responseText);
+			loadRows();
+		}
+
+		function popup(id) {
+			window.open('/player?movieId=' + id, 'MsgWindow', 'width=500,height=300,left=' + (screen.width / 2 - 640) + ',top=' + (screen.height / 2 - 360));
+		}
+	</script>
+	<style>
+		html {
+			font-family: 'Sailec', "Arial Narrow", Arial, "Roboto Light", sans-serif;
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+
+		body {
+			margin: auto;
+			background-color: #fff;
+			color: #474747;
+			font-size: 1px;
+			font-weight: 400;
+			line-height: 1.5;
+			position: relative;
+		}
+
+		header {
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+
+		header>:nth-child(1) {
+			height: 44px;
+			align-content: center;
+			background-color: #1e1e1e;
+			color: #fff;
+			text-align: center;
+			display: inline-block;
+			width: 100%;
+		}
+
+		header>:nth-child(1)>:nth-child(1) {
+			float: left;
+		}
+
+		header>:nth-child(1)>:nth-child(1)>:nth-child(1)>* {
+			margin-left: 10px;
+			margin-top: 7px;
+			height: 30px;
+		}
+
+		header>:nth-child(1)>:nth-child(2) {
+			margin-right: 20px;
+			float: right;
+		}
+
+		.button_big,
+		.button_small {
+			margin-left: 10px;
+			margin-top: 7px;
+			display: inline-block;
+			padding-top: 5px;
+			padding-bottom: 3px;
+			border-radius: 3px;
+			font-size: 14px;
+			text-decoration: none;
+			color: #fff;
+			transition-duration: 2s;
+			  transition: 0.3s;
+		}
+
+		.button_big {
+			background-color: green;
+			width: 160px;
+			transition-duration: 2s;
+			  transition: 0.3s;
+		}
+
+		.button_big:hover {
+			text-decoration: underline;
+			animation: hoverr1 5s infinite;
+		}
+		
+		@keyframes hoverr1 {
+  0% {
+    background: green;
+  }
+  25% {
+    background: orange;
+  }
+  50% {
+    background: grey;
+  }
+  75% {
+    background: orange;
+  }
+  100% {
+    background: green;
+  }
+}
+
+		@keyframes hoverr2 {
+  0% {
+    color: green;
+  }
+  25% {
+    color: orange;
+  }
+  50% {
+    color: grey;
+  }
+  75% {
+    color: orange;
+  }
+  100% {
+    color: green;
+  }
+}
+
+		.button_small:hover {
+			color: orangered;
+			animation: hoverr2 5s infinite;
+		}
+
+		.button_big:hover,
+		.button_small:hover {
+			cursor: pointer;
+		}
+
+		.char_dropdown {
+			width: 200px;
+			transition-duration: 2s;
+			-webkit-transition: all 0.2s ease-in;
+			-moz-transition: all 0.2s ease-in;
+			-o-transition: all 0.2s ease-in;
+			transition: all 0.2s ease-in;
+			cursor: pointer;
+		}
+
+		.char_dropdown:hover>:nth-child(1) {
+			cursor: context-menu;
+			color: #d85e27;
+			cursor: pointer;
+		}
+
+		.char_dropdown>menu {
+			position: relative;
+			display: none;
+			top: 100%;
+			left: 0;
+			z-index: 1000;
+			float: left;
+			width: 180px;
+			padding: 10px 0;
+			margin: 9px 0 0;
+			list-style: none;
+			font-size: 12px;
+			text-align: left;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			border: 1px solid rgba(0, 0, 0, 0.15);
+			border-radius: 4px;
+			-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+			box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+			-webkit-background-clip: padding-box;
+			background-clip: padding-box;
+		}
+
+		.char_dropdown:hover>menu {
+			display: block;
+		}
+
+		.char_dropdown>menu>a {
+			display: block;
+			padding: 2px 20px;
+			clear: both;
+			font-weight: normal;
+			color: #333;
+			text-decoration: none;
+		}
+
+		.char_dropdown>menu>a:hover {
+			color: #d85e27;
+			background-color: #f5f5f5;
+		}
+
+		.char_dropdown>menu>div {
+			height: 1px;
+			margin: 10px 0;
+			background-color: #e5e5e5;
+		}
+
+		.warning {
+			font-size: 14px;
+			padding: 10px 0;
+			background-color: #fd4;
+			text-align: center;
+		}
+
+		.warning::before {
+			font-family: 'GlyphiconsRegular';
+			padding-right: 4px;
+			content: '\E079';
+			font-size: 18px;
+		}
+
+		.warning>a {
+			color: #5596e6;
+		}
+
+		table {
+			width: 100%;
+			max-width: 100%;
+			margin-bottom: 127px;
+			margin-right: auto;
+			margin-left: auto;
+			margin-top: 127px;
+			background-color: transparent;
+			border-collapse: collapse;
+			border-spacing: 0;
+			font-size: 17px;
+		}
+
+		@media(min-width: 768px) {
+			table {
+				width: 750px;
+			}
+		}
+
+		@media(min-width: 992px) {
+			table {
+				width: 970px;
+			}
+		}
+
+		@media(min-width: 1200px) {
+			table {
+				width: 1175px;
+			}
+		}
+
+		thead {
+			font-weight: 200;
+		}
+
+		td {
+			padding: 8px;
+			vertical-align: middle;
+			line-height: 1.42857143;
+		}
+
+		thead {
+			border-bottom: 2px solid #ddd;
+			border-top: 1px solid #ddd;
+		}
+
+		tbody>tr {
+			border-top: 0;
+			border-bottom: 1px solid #ddd;
+			background: azure;
+		}
+
+		tbody>tr:hover {
+			background-color: linen;
+		}
+
+		tr>:nth-child(1) {
+			width: 60px;
+		}
+
+		tr>:nth-child(1)>img {
+			height: 110px;
+			cursor: pointer;
+			filter: saturate(1) drop-shadow(4px 4px 3px black);
+		}
+		
+		tr>:nth-child(1)>img:hover {
+			height: 110px;
+			cursor: pointer;
+			filter: saturate(2.5) drop-shadow(4px 4px 3px grey);
+		}
+		
+		tr>:nth-child(1)>img:active {
+			height: 110px;
+			cursor: alias;
+			filter: saturate(5) drop-shadow(4px 4px 3px silver);
+		}
+
+		tr>:nth-child(1) {
+			word-break: break-word;
+			overflow: auto;
+		}
+
+		tr>:nth-child(2) {
+			color: #999;
+			cursor: move;
+		}
+
+		tr>:nth-child(3) {
+			width: 210px;
+			height: 100px;
+			cursor: ns-resize;
+		}
+
+		tr>:nth-child(3)>* {
+			display: inline-block;
+			text-align: center;
+			font-size: 15px;
+			width: 8.5px;
+			cursor: default;
+			transform: scaleX(0.7);
+		}
+
+		tr>:nth-child(4) {
+			font-family: 'GlyphiconsRegular';
+			text-decoration: none;
+			padding-top: 5px;
+			font-size: 14px;
+			width: 80px;
+		}
+		
+		tr>:nth-child(4):hover {
+			font-family: 'GlyphiconsRegular';
+			text-decoration: none;
+			padding-top: 5px;
+			font-size: 14px;
+			width: 80px;
+			color: yellow;
+		}
+		
+		tr>:nth-child(4):active {
+			font-family: 'GlyphiconsRegular';
+			text-decoration: none;
+			padding-top: 5px;
+			font-size: 14px;
+			width: 80px;
+			color: cyan;
+		}
+
+		tr>:nth-child(4)>a {
+			display: inline-block;
+			text-decoration: none;
+			padding-right: 10px;
+			color: firebrick;
+		}
+
+		tr>:nth-child(4)>a:hover {
+			color: red;
+		}
+
+		tr>:nth-child(4)>:nth-child(1)::before {
+			content: '\E174';
+		}
+
+		tr>:nth-child(4)>:nth-child(2)::before {
+			content: '\E235';
+		}
+
+		tr>:nth-child(4)>:nth-child(3)::before {
+			content: '\E182';
+		}
+
+		tfoot>tr>td {
+			text-align: center;
+			border: 1px solid black;
+			background: mediumaquamarine;
+		}
+
+		tfoot>tr>td>a {
+			text-decoration: none;
+			color: #474747;
+			font-size: 14px;
+		}
+
+		form {
+			display: none;
+		}
+
+		@font-face {
+			font-family: 'Sailec';
+			font-weight: 100;
+			src: url('./Sailec-Thin.woff') format('woff');
+		}
+
+		@font-face {
+			font-family: 'Sailec';
+			font-weight: 200;
+			src: url('./Sailec-Light.woff') format('woff');
+		}
+
+		@font-face {
+			font-family: 'Sailec';
+			font-weight: 400;
+			src: url('./Sailec-Regular.woff') format('woff');
+		}
+
+		@font-face {
+			font-family: 'Sailec';
+			font-weight: 500;
+			src: url('./Sailec-Medium.woff') format('woff');
+		}
+
+		/* font weight 500 and font weight 700 (bold) are the same for better integration support */
+		@font-face {
+			font-family: 'Sailec';
+			font-weight: 700;
+			src: url('./Sailec-Medium.woff') format('woff');
+		}
+
+		@font-face {
+			font-family: 'GlyphiconsRegular';
+			src: url('./glyphicons-regular.woff') format('woff');
+			font-weight: normal;
+			font-style: normal;
+		}
+		.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+.spinner {
+  margin: 100px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.cube1, .cube2 {
+  background-color: #333;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+  animation: sk-cubemove 1.8s infinite ease-in-out;
+}
+
+.cube2 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+@-webkit-keyframes sk-cubemove {
+  25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) }
+  50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) }
+  75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
+  100% { -webkit-transform: rotate(-360deg) }
+}
+
+@keyframes sk-cubemove {
+  25% { 
+    transform: translateX(42px) rotate(-90deg) scale(0.5);
+    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+  } 50% { 
+    transform: translateX(42px) translateY(42px) rotate(-179deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+  } 50.1% { 
+    transform: translateX(42px) translateY(42px) rotate(-180deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+  } 75% { 
+    transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+  } 100% { 
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+  }
+}
+img { border-radius: 6px; background: transparent; border: 2px solid black; }
+	</style>
+
+</body></html>

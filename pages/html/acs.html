@@ -1,0 +1,536 @@
+<html><head>
+<title>MSAgent demo - With Peedy</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="KEYWORDS" content="try test sample HTML Web page code">
+<meta name="DESCRIPTION" content="Simple test page to try Microsoft Agent and verify components are working successfully.">
+<meta name="MS.LOCALE" content="EN-US">
+  <style type="text/css">
+  <!--
+    A:link {color:"#003399";}
+    A:visited {color:"#003399";}
+    A:hover {color:"red";}
+  -->
+    font-family: "SST Vietnamese", Verdana, Arial, Roboto;
+  </style>
+<link rel="stylesheet" type="text/css" href="/web/20040205005144cs_/http://www.microsoft.com/library/flyoutmenu/default.css">
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" text="#000000" alink="#003399" link="#003399" vlink="#003399"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/_static/js/timestamp.js" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/graph-calc.js" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/auto-complete.js" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/toolbar.js" charset="utf-8"></script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+.wb-autocomplete-suggestions {
+    text-align: left; cursor: default; border: 1px solid #ccc; border-top: 0; background: #fff; box-shadow: -1px 1px 3px rgba(0,0,0,.1);
+    position: absolute; display: none; z-index: 2147483647; max-height: 254px; overflow: hidden; overflow-y: auto; box-sizing: border-box;
+}
+.wb-autocomplete-suggestion { position: relative; padding: 0 .6em; line-height: 23px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1.02em; color: #333; }
+.wb-autocomplete-suggestion b { font-weight: bold; }
+.wb-autocomplete-suggestion.selected { background: #f0f0f0; }
+</style>
+<script language="JavaScript" src="/web/20040205005144js_/http://www.microsoft.com/library/toolbar/toolbar.js"></script>
+<script language="JavaScript" src="/web/20040205005144js_/http://www.microsoft.com/library/toolbar/en-us/globalMNP.js"></script>
+<script language="JavaScript" src="/web/20040205005144js_/http://www.microsoft.com/msagent/inc/local.js"></script>
+
+<!-- Start: ToolBar for down-level browsers-->
+<span id="TBDownLevelDiv">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#6487DC">
+<tbody><tr width="100%">
+<td valign="TOP" width="250" height="60" rowspan="2">
+  <a href="http://web.archive.org/web/20040205005144/http://www.microsoft.com/msagent" target="_top">
+  <img src="/web/20040205005144im_/http://www.microsoft.com/msagent/images/banner.gif" width="250" height="60" alt="Microsoft Agent Home" border="0"></a></td>
+<td valign="TOP" height="20" align="RIGHT"><img src="/web/20040205005144im_/http://www.microsoft.com/library/toolbar/images/curve.gif" width="18" height="20" alt="" border="0"></td>
+<td bgcolor="#000000" height="20" valign="MIDDLE" align="RIGHT" nowrap="" colspan="2">
+  <font color="#FFFFFF" face="Verdana, Arial" size="1"><b>&nbsp;&nbsp;
+  <a style="color:#FFFFFF;text-decoration:none;" href="/web/20040205005144/http://www.microsoft.com/isapi/gomscom.asp?target=/catalog/default.asp?subid=22" target="_top"><font color="#FFFFFF">All Products</font></a>&nbsp;&nbsp;
+  <font color="#FFFFFF">|</font>&nbsp;&nbsp;
+  <a style="color:#FFFFFF;text-decoration:none;" href="/web/20040205005144/http://www.microsoft.com/isapi/gomscom.asp?target=/support/" target="_top"><font color="#FFFFFF">Support</font></a>&nbsp;&nbsp;
+  <font color="#FFFFFF">|</font>&nbsp;&nbsp;
+  <a style="color:#FFFFFF;text-decoration:none;" href="/web/20040205005144/http://www.microsoft.com/isapi/gosearch.asp?target=/us/default.asp" target="_top"><font color="#FFFFFF">Search</font></a>&nbsp;&nbsp;
+  <font color="#FFFFFF">|</font>&nbsp;&nbsp;
+  <a style="color:#FFFFFF;text-decoration:none;" href="/web/20040205005144/http://www.microsoft.com/isapi/gomscom.asp?target=/" target="_top"><font color="#FFFFFF">microsoft.com Home</font></a>&nbsp;&nbsp;
+  </b></font>
+</td>
+</tr>
+<tr>
+<td valign="TOP" height="40" width="19">
+  <img src="/web/20040205005144im_/http://www.microsoft.com/library/images/gifs/homepage/1ptrans.gif" width="19" height="40" alt="" border="0"></td>
+<td valign="TOP" height="40" align="RIGHT" nowrap="" colspan="2">
+  <a href="http://web.archive.org/web/20040205005144/http://www.microsoft.com/" target="_top">
+  <img src="/web/20040205005144im_/http://www.microsoft.com/library/mnp/2/gif/mslogo/6487DC.gif" width="112" height="40" alt="Microsoft.com Home" border="0"></a></td>
+</tr>
+<tr>
+<td bgcolor="#6487DC" width="100%" height="20" valign="MIDDLE" nowrap="" colspan="4">
+  <font color="#FFFFFF" face="Verdana, Arial" size="1"><b>&nbsp;&nbsp;
+  <a style="color:#FFFFFF;text-decoration:none;" href="http://web.archive.org/web/20040205005144/http://www.microsoft.com/msagent" target="_top">
+  <font color="#FFFFFF">Microsoft Agent home</font></a>&nbsp;&nbsp;
+  <font color="#FFFFFF">|</font>&nbsp;&nbsp;
+  <a style="color:#FFFFFF;text-decoration:none;" href="http://web.archive.org/web/20040205005144/http://www.microsoft.com/msagent/top10s.asp" target="_top">
+  <font color="#FFFFFF">Top 10</font></a>&nbsp;&nbsp;
+  <font color="#FFFFFF">|</font>&nbsp;&nbsp;
+  <a style="color:#FFFFFF;text-decoration:none;" href="http://web.archive.org/web/20040205005144/http://msdn.microsoft.com/msagent" target="_top">
+  <font color="#FFFFFF">Microsoft Agent in the MSDN Library</font></a>
+  </b></font>
+</td>
+</tr>
+</tbody></table>
+</span>
+<!-- End: ToolBar for down-level browsers-->
+
+<script language="JavaScript">
+<!--// Hide from old browsers								
+var ToolBar_Supported = ToolBar_Supported;										
+if (ToolBar_Supported != null && ToolBar_Supported == true)					
+{															  TBDownLevelDiv.style.display = "none";										  drawToolbar();				
+}//-->
+</script>
+<!-- End: ToolBar V2.0 -->
+
+
+<basefont face="Verdana, Arial, Helvetica" size="3">
+
+<table cellpadding="0" cellspacing="0" width="602" border="0">
+
+<!-- spacer row - specify all others with colspan or rowspan-->
+<tbody><tr>
+<!--1--><td width="181"><img src="/web/20040205005144im_/http://www.microsoft.com/library/images/gifs/homepage/1ptrans.gif" width="181" height="1" alt="" border="0"></td>
+<!--2--><td width="1"><img src="/web/20040205005144im_/http://www.microsoft.com/library/images/gifs/homepage/1ptrans.gif" width="1" height="1" alt="" border="0"></td>
+<!--3--><td width="12"><img src="/web/20040205005144im_/http://www.microsoft.com/library/images/gifs/homepage/1ptrans.gif" width="12" height="1" alt="" border="0"></td>
+<!--4--><td width="150"><img src="/web/20040205005144im_/http://www.microsoft.com/library/images/gifs/homepage/1ptrans.gif" width="150" height="1" alt="" border="0"></td>
+<!--5--><td width="20"><img src="/web/20040205005144im_/http://www.microsoft.com/library/images/gifs/homepage/1ptrans.gif" width="20" height="1" alt="" border="0"></td>
+<!--6--><td width="230"><img src="/web/20040205005144im_/http://www.microsoft.com/library/images/gifs/homepage/1ptrans.gif" width="230" height="1" alt="" border="0"></td>
+<!--7--><td width="8"><img src="/web/20040205005144im_/http://www.microsoft.com/library/images/gifs/homepage/1ptrans.gif" width="8" height="1" alt="" border="0"></td>
+</tr>
+
+<tr>
+<!-- left menu (column 1) -->
+<td valign="TOP">
+<font face="Verdana, Arial, Helvetica" size="1">
+
+<table cellpadding="0" cellspacing="0" width="" border="0" bgcolor="6487DC" color="FFFFFF">
+  <tbody><tr><td height="1"><img src="/web/20040205005144im_/http://www.microsoft.com/library/shared/searchtab/graphics/1pix.gif" width="181" height="5" alt="" border="0"></td></tr>
+  <tr><td>
+    <table cellpadding="0" cellspacing="0" border="0">
+      <tbody><tr><td><img src="/web/20040205005144im_/http://www.microsoft.com/library/shared/searchtab/graphics/1pix.gif" width="5" height="1" alt="" border="0"></td>
+        <td><font face="Verdana, Arial, Helvetica" size="1" color="#FFFFFF">Search this site for</font></td>
+      </tr>
+    </tbody></table>
+  </td></tr>
+  <tr><td height="1"><img src="/web/20040205005144im_/http://www.microsoft.com/library/shared/searchtab/graphics/1pix.gif" width="1" height="2" alt="" border="0"></td></tr>
+  <form id="frmSearch2" target="_top" name="frmSearch2" action="http://web.archive.org/web/20040205005144/http://search.microsoft.com/us/products/msagent/default.asp" method="get"></form>
+  <input type="HIDDEN" name="IntCat" value="0">
+  <input type="HIDDEN" name="Boolean" value="ALL">
+  <input type="HIDDEN" name="Nq" value="new">
+  <tr><td>
+    <table cellpadding="0" cellspacing="0" border="0">
+      <tbody><tr><td valign="middle"><img src="/web/20040205005144im_/http://www.microsoft.com/library/shared/searchtab/graphics/1pix.gif" width="6" height="1" alt="" border="0"></td>
+        <td valign="middle"><input style="font-size:10px;height:18px;" type="TEXT" id="qu2" name="qu" size="22" maxlength="255" value=""></td>
+        <td valign="middle"><img src="/web/20040205005144im_/http://www.microsoft.com/library/shared/searchtab/graphics/1pix.gif" width="7" height="1" alt="" border="0"></td>
+        <td valign="middle"><input style="font-weight:normal;font-size:10px;" type="SUBMIT" id="btnSearch" name="btnSearch" value="GO"></td>
+      </tr>
+    </tbody></table>
+  </td></tr>
+  <tr><td height="1"><img src="/web/20040205005144im_/http://www.microsoft.com/library/shared/searchtab/graphics/1pix.gif" width="1" height="1" alt="" border="0"></td></tr>
+  <tr><td>
+    <table cellpadding="0" cellspacing="0" border="0">
+      <tbody><tr><td valign="top"><img src="/web/20040205005144im_/http://www.microsoft.com/library/shared/searchtab/graphics/1pix.gif" width="6" height="17" alt="" border="0"></td>
+        <td valign="top"><a href="http://web.archive.org/web/20040205005144/http://search.microsoft.com/us/products/msagent/advanced_search.asp"><nobr><u><font face="Verdana, Arial, Helvetica" size="1" color="#FFFFFF">Advanced Search</font></u></nobr></a></td>
+      </tr>
+    </tbody></table>
+  </td></tr>
+  <tr><td height="1"><img src="/web/20040205005144im_/http://www.microsoft.com/library/shared/searchtab/graphics/1pix.gif" width="1" height="2" alt="" border="0"></td></tr>
+  
+</tbody></table>
+
+<table class="flyoutMenu" menudata="/msagent/menudata.xml" width="181" cellpadding="2" cellspacing="0" border="0">
+<tbody><tr><td>
+  <table width="176" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="flyoutLink">
+    <a href="/web/20040205005144/http://www.microsoft.com/msagent">Microsoft Agent home</a>
+  </td></tr></tbody></table>
+  <table width="176" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="flyoutLink" handle="ProductInfo">
+    <a href="/web/20040205005144/http://www.microsoft.com/msagent/prodinfo/default.asp">Product information</a>
+  </td></tr></tbody></table>
+  <table width="176" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="flyoutLink" handle="Using">
+    <a href="/web/20040205005144/http://www.microsoft.com/msagent/using/default.asp">Using Agent</a>
+  </td></tr></tbody></table>
+  <table width="176" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="flyoutLink" handle="Downloads">
+    <a href="/web/20040205005144/http://www.microsoft.com/msagent/downloads/default.asp">Downloads</a>
+  </td></tr></tbody></table>
+  <table width="176" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="flyoutLink" handle="Programming">
+    <a href="/web/20040205005144/http://www.microsoft.com/msagent/dev/default.asp">Programming Agent</a>
+  </td></tr></tbody></table>
+  <table width="176" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="flyoutLink" handle="Licensing">
+    <a href="/web/20040205005144/http://www.microsoft.com/msagent/licensing/default.asp">Licensing Agent</a>
+  </td></tr></tbody></table>
+  <table width="176" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="flyoutLink" handle="Support">
+    <a href="/web/20040205005144/http://www.microsoft.com/msagent/support/default.asp">Support</a>
+  </td></tr></tbody></table>
+</td></tr>
+</tbody></table>
+
+</font>
+</td>
+
+
+<!-- vertical blue line (column 2) -->
+<td bgcolor="#6699CC"><img src="/web/20040205005144im_/http://www.microsoft.com/library/images/gifs/homepage/1ptrans.gif" width="1" height="1" alt="" border="0"></td>
+
+<!-- spacer (column 3) -->
+<td><img src="/web/20040205005144im_/http://www.microsoft.com/library/images/gifs/homepage/1ptrans.gif" width="1" alt="" border="0"></td>
+
+<!--Main content cell (columns 4-6) -->
+<td colspan="3" valign="TOP">
+<img src="/web/20040205005144im_/http://www.microsoft.com/library/images/gifs/homepage/1ptrans.gif" width="1" height="1" alt="" border="0"><br>
+
+<font face="Verdana, Arial, Helvetica" size="3">
+<p><img align="center" alt="" src="/web/20040205005144im_/http://www.microsoft.com/msagent/images/diamond_icon.gif">
+<b>Microsoft Agent Demo</b></p><hr size="1"><p></p>
+</font>
+<font face="Verdana, Arial, Helvetica" size="2">
+
+<form name="MyForm">
+<p>Type it something and click the Speak button.</p>
+<p> 
+<input id="text1" name="text1" style="HEIGHT: 22px; WIDTH: 276px">&nbsp; 
+<input id="button6" name="button6" style="LEFT: 197px; TOP: 246px" type="button" value="Test" onclick="SpeakButton()"></p>
+<p>Or click one of these other buttons:</p>
+<p><strong></strong><input id="button7" name="button7" style="HEIGHT: 24px; WIDTH: 117px" type="button" value="Tell a horrible joke" onclick="JokeButton()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input id="button7" name="button7" style="HEIGHT: 24px; WIDTH: 117px" type="button" value="Play with the song" onclick="SingButton()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p><b>Here's what you'll need to use this page: </b>
+</p><ol>
+    <li>Windows ME or Windows XP operating system 
+    </li><li>Internet Explorer version 6.0 or higher 
+    </li><li>200 MHz PC (or faster) 
+    </li><li>At least 128 MB of RAM 
+    </li><li>At least 661K free disk space for the Microsoft.
+	</li><li>You must have minimum of 10GB free space
+    Agent components, 3.1 MB for Peedy and an additional 1.34 MB for the L&amp;H 
+    TruVoice Text-To-Speech engine
+    </li><li>Windows 2000 users may also need to install the <a href="http://web.archive.org/web/20040205005144/http://activex.microsoft.com/activex/controls/sapi/spchapi.exe">SAPI 4.0 runtime</a>
+    </li><li>A Windows-compatible sound card 
+    </li><li>A compatible set of speakers and additional microphone 
+    (recommended)</li>
+	<li>You must to be Internet Explorer instead.</li>
+	<li>Use IETab or Internet Explorer. This site will not work in certain browsers without an extension: Firefox, Opera, Edge, Chrome, Safari.</li>
+</ol>
+<p>Or you're using on Google Chrome,</p>
+<li>Download IETab extension on Chrome. And click on top of the extension functions bar. (is on top here)
+<p>To access other Agent components, go to 
+the&nbsp; <a href="/web/20040205005144/http://www.microsoft.com/msagent/downloads/user.asp">Downloads page</a>.</p>
+<p>To learn how to program the character to do other things, go to the&nbsp;
+<a href="/web/20040205005144/http://www.microsoft.com/msagent/dev/docs/">Microsoft Agent Documentation page</a>.</p> 
+
+</li></form>
+
+<a href="">
+<img src="/web/20040205005144im_/http://www.microsoft.com/msagent/images/diamond_icon_sm.gif" border="0" alt="Microsoft Agent home">
+Refresh</a><p></p>
+
+<font face="'Permanent Marker', Verdana, Arial, Helvetica" size="1">
+Last Updated: March 31, 2020<br>
+</font>
+<br>
+
+</font></td>
+<!-- End of Main content cell-->
+
+<!-- Far-right spacer (column 7) -->
+<td><img src="/web/20040205005144im_/http://www.microsoft.com/library/images/gifs/homepage/1ptrans.gif" width="1" height="1" alt="" border="0"></td>
+
+</tr>
+</tbody></table>
+
+<!-- bottom footer -->
+<table bgcolor="#6487DC" width="100%" height="20" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td valign="BOTTOM" align="left">
+  <table height="20" border="0" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+  <td width="10">&nbsp;&nbsp;</td>
+  <td nowrap=""><a href="/web/20040205005144/http://www.microsoft.com/msagent/contact.asp" target="_top"><font size="1" color="#000000" style="text-decoration:none;"><b>Contact us</b></font></a></td>
+  <td width="10">&nbsp;&nbsp;</td>
+  <script language="javascript" type="text/javascript">
+    var sItemURL="mailto:?subject=A link to information about Microsoft Agent&body=This link is from the Microsoft Agent Web site" + " "  + escape(top.parent.location.href)
+    document.write('<TD NOWRAP><A HREF="' + sItemURL + '"  TARGET=""><FONT SIZE="1" COLOR="#000000" STYLE="text-decoration:none;"><B>E-Mail this page</B></FONT></A></TD>')
+  </script><td nowrap=""><a href="mailto:?subject=A link to information about Microsoft Agent&amp;body=This link is from the Microsoft Agent Web site http%3A//78.63.40.199%3A705/html/acs.html" target=""><font size="1" color="#000000" style="text-decoration:none;"><b>E-Mail this page</b></font></a></td>
+  </tr>
+  </tbody></table>
+</td><td>
+</td></tr>
+<tr>
+<td>
+  <table height="30" border="0" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+  <td width="10">&nbsp;&nbsp;</td>
+  <td align="left">
+    <a style="text-decoration:underline;" href="http://web.archive.org/web/20040205005144/http://www.microsoft.com/info/cpyright.htm"><font size="1" color="#000000">© 2003 Microsoft Corporation. All rights reserved. Terms of Use.</font></a></td>
+  <td width="10">&nbsp;&nbsp;</td>
+  <td nowrap=""><a href="/web/20040205005144/http://www.microsoft.com/info/privacy.htm" target="_top"><font size="1" color="#000000">Privacy Statement</font></a></td>
+  <td width="10">&nbsp;&nbsp;</td>
+  <td nowrap=""><a href="/web/20040205005144/http://www.microsoft.com/enable/" target="_top"><font size="1" color="#000000">Accessibility</font></a></td>
+  </tr>
+  </tbody></table>  
+</td>
+</tr>
+</tbody></table>
+
+
+<object classid="clsid:D45FD31B-5C6E-11D1-9EC1-00C04FD7081F" id="Agent" codebase="/web/20040205005144oe_/http://www.microsoft.com/msagent/dev/code/trymsagent.asp#VERSION=2,0,0,0">
+</object>
+ 
+<object classid="clsid:B8F2846E-CE36-11D0-AC83-00C04FD97575" id="TruVoice" codebase="/web/20040205005144oe_/http://www.microsoft.com/msagent/dev/code/trymsagent.asp#VERSION=6,0,0,0">
+</object>
+
+<script language="VBScript">
+Dim Peedy
+Dim LoadRequestUNC
+Dim LoadRequestURL
+Dim GetShowAnimation
+
+Sub Window_OnLoad
+  ' Load the character
+  LoadCharacter
+End Sub
+
+Sub InitCommands
+  ' Give user access to the Advanced Character Options dialog
+  Peedy.Commands.RemoveAll
+  Peedy.Commands.Add "ACO", "Advanced Character Options"
+End Sub
+
+Sub DoIntro
+  InitCommands
+
+  ' Set the character's language ID
+  Peedy.LanguageID = &H0409
+
+  ' Make the character appear
+  On Error Resume Next
+  Peedy.MoveTo window.screenLeft+450, window.screenTop+225
+  Peedy.Show
+
+  ' Start the monologue
+  Peedy.Speak "Hello."
+  Peedy.Play "Blink"
+  Peedy.Play "Greet"
+  Peedy.Speak "I'm the first agent famous character, it's me Peedy."
+  Peedy.Play "RestPose"
+  Peedy.Speak "Maybe you have been watched you've been gnomed series. Gnome each other in United Kingdom."
+  Peedy.Play "Pleased"
+  Peedy.Speak "Welcome to the Microsoft Agent website."
+  Peedy.Play "Explain"
+  Peedy.Speak "Microsoft Agent is a new technology that supports interactive animated characters,"
+  Peedy.Play "Blink"
+  Peedy.Speak "and learning your skills how to speak, joke strongest words to you, fact with me, sing at me, play the classic games, and more."
+  Peedy.Play "Explain"
+  Peedy.Speak "How we can do with covid 19. It's corona virus time."
+  Peedy.Speak "Try it washing your hands with your sliding pink soap on the kitchen."
+  Peedy.Speak "If you not washing your special bodies, make to go away and don't touch other people, this causes many problems. Have few syringes in your professional doctor to cure them."
+  Peedy.Play "Blink"
+  Peedy.Speak "You can also spell my friends."
+  Peedy.Play "Think"
+  Peedy.Speak "Bonzi, the purple virus gorilla,"
+  Peedy.play "Blink"
+  Peedy.Speak "Robby, the robot."
+  Peedy.Play "Explain"
+  Peedy.Speak "and Merlin, the wizard."
+  Peedy.Play "RestPose"
+  Peedy.Speak "To download a each exe, try our Downloads page."
+  Peedy.Play "Blink"
+  Peedy.Speak "Pick one which you can download them running with Windows ME, 2000, XP, Vista, or ever within 2020 support 7."
+  Peedy.Speak "If you downloaded them, double click to open this installation."
+  Peedy.Speak "Follow the instructions if you want to install this agent."
+  Peedy.Speak "After finished, you will need a mash to make your agents talk, whisper, move, gesture at, or suggest your favorite individually thing."
+  Peedy.Speak "You can say like me, \pit=400\I'm so fucking scared!"
+  Peedy.Speak "Or something else, if you want to do this."
+  Peedy.Speak "Or if you just want to try me out,"
+  Peedy.Play "GestureRight"
+  Peedy.Speak "Click the buttons on this page. If you don't know how to interact to me, just type on the message box in your old Internet Explorer, and click the button for the speak. Then I will say for you."
+End Sub
+
+Sub Agent_RequestComplete(ByVal Request)
+  ' The Request to load the ACF character fails 
+  If Request = LoadRequestURL Then
+	
+    ' If it failed
+    If Request.Status = 1 Then
+      Msgbox "Peedy.acs is missing or have deleted. Copy the validation file to speak. Please download the valid of the Microsoft agent's file. If you don't have any space in your actual hard drive, just try to free up your space by deleting unused or cache of junk files."
+      Exit Sub
+
+    ' If it succeeded
+    ElseIf Request.Status = 0 Then
+      ' Assign Peedy to the loaded character
+      Set Peedy = Agent.Characters("Peedy")
+      ' Get the preliminary animations necessary to show Peedy
+      Set GetShowAnimation = Peedy.Get ("state", "showing, speaking")
+      Peedy.Get "animation", "Blink, Greet, Pleased, Explain, Think, GestureRight,Idle1_1,Idle2_2, Announce, Uncertain", False
+    End If
+  ' The request to get the animation 
+  ElseIf Request = GetShowAnimation Then
+    ' If it failed 
+    If Request.Status = 1 Then
+		Msgbox "Agent Is Busy Animation Error"
+		Exit Sub
+	' If it succeeded
+    ElseIf Request.Status = 0 Then
+      DoIntro
+    End If
+  End If
+End Sub
+
+Sub LoadCharacter
+  On Error Resume Next
+
+  ' Attempt to load the character from the Microsoft Agent Chars directory
+  Set LoadRequestUNC = Agent.Characters.Load ("Peedy", "Peedy.acs")
+
+  ' If it fails...
+  If LoadRequestUNC.Status <> 0 Then
+    ' Attempt to load the character from the Microsoft Agent site
+    Set LoadRequestURL = Agent.Characters.Load ("Peedy", "http://web.archive.org/web/20040205005144/http://agent.microsoft.com/agent2/chars/peedy/peedy.acf") 
+
+    ' It didn't fail so assign Peedy to loaded character file
+  Else 
+    ' Assign Peedy to the loaded character
+    Set Peedy = Agent.Characters("Peedy")
+    DoIntro
+  End If
+End Sub
+
+Sub Agent_Click (ByVal CharacterID, ByVal Button, ByVal Shift, ByVal X, ByVal Y)
+  Peedy.Stop
+  Peedy.Play "Alert"
+  Peedy.Speak "Are you going to go at me to scared hell? No! We don't want to hell that's it.|Well, you can see me, I'm so fucking polly when you click me on your mouse pointer. You need for the rest.|\pit=400\Stop, it! Right now. Mousing is moving fuckin' idea.|Last of position, place to me right back.|You should close it and make me asleep."
+  Peedy.Play "Blink"
+End Sub
+
+Sub Agent_DragComplete (ByVal CharacterID, ByVal Button, ByVal Shift, ByVal X, ByVal Y)
+  Peedy.Stop
+  Peedy.Play "Blink"
+  Peedy.Speak "Well, \emp\this gives me a new perspective of concerns. Concern at me, butt on people will laugh at me. Audiences said, hagahagahagahagahagahagaha! Look! He's a pooping parrot, hehehehehehehehehehehehehe! Don't click at me or poop, or audience will laugh again. I will call Doulingo to cut your head. And congratulate your new head.|Your grounded for extreme 7 decades! Go to your room right now or else you will teach a lesson how to be au t t p instead.|WHATaaaaaaaaaaaaaaaasaaaaaaasaaaasaaaaa? Cooking is ruined. Thanks. Assholers.|Hit me on the wall and I will give you real some consequences.|What are you working on? Now I cannot hear you, I still can't! Oh, you can say the strong grammar word, jurisdictional. Don't correct? Then go to learning.|Stop using with this Skype.|Are you fucking operian?|Oh man, stop unloving Internet Explorer your autistic people!|I will call CrazyMediumScout if you don't stop it through. You'd straight hide to right here.|Can you teach a lesson if you stop to do moving basics?"
+  Peedy.Play "Blink"
+End Sub
+
+Sub SpeakButton()
+  Peedy.Stop
+  If document.MyForm.text1.value <> "" Then
+    Peedy.Speak document.MyForm.text1.value
+  End If
+End Sub
+
+Sub SingButton()
+  Peedy.Stop
+  'choose a random response
+  randomreply = Int((2 - 1 + 1) * Rnd + 1)
+    
+  Select Case randomreply
+  Case 1
+	Peedy.Speak "\chr="+chr(34)+"monotone"+chr(34)+"\\spd=60\\pit=120\Dai \pit=100\zee, \pit=80\Dai \pit=60\zee"
+        
+	Peedy.Speak "\chr="+chr(34)+"monotone"+chr(34)+"\\spd=120\\pit=68\Give \pit=74\me \pit=80\your \pit=68\an, \pit=80\ser \pit=60\true."
+        
+	Peedy.Speak "\chr="+chr(34)+"monotone"+chr(34)+"\\spd=50\\pit=92\I'm \pit=120\half\pit=100\cray \pit=80\zee,"
+        
+	Peedy.Speak "\chr="+chr(34)+"monotone"+chr(34)+"\\spd=115\\pit=68\All \pit=74\for \pit=80\the \pit=80\love \pit=100\of \pit=92\you."
+        
+	Peedy.Speak "\chr="+chr(34)+"monotone"+chr(34)+"\\spd=80\\pit=100\It \pit=112\won't \pit=110\be \pit=92\a \pit=120\sty-\pit=100\lish \pit=92\mare\pit=80\rege."
+        
+	Peedy.Speak "\chr="+chr(34)+"monotone"+chr(34)+"\\spd=100\\pit=92\I \pit=100\can't \pit=80\a \pit=68\ford, \pit=80\a \pit=68\care- \pit=60\ridge."
+        
+	Peedy.Speak "\chr="+chr(34)+"monotone"+chr(34)+"\\spd=100\\pit=60\But \pit=80\you'll \pit=100\look \pit=92\sweet,"
+        
+	Peedy.Speak "\chr="+chr(34)+"monotone"+chr(34)+"\\spd=90\\pit=60\Up \pit=80\on \pit=100\the \pit=92\seat."
+        
+	Peedy.Speak "\chr="+chr(34)+"monotone"+chr(34)+"\\spd=100\\pit=100\Of \pit=112\a \pit=120\by \pit=100\sic \pit=80\cull \pit=92\built, \pit=60\for \pit=80\two."
+        
+	Peedy.Play "greet"
+	Peedy.Speak "Clap clap clap. Thank you, thank you, thank you very much, I'm so proud with you. Hey, some people! Can you applause to me audiences? Hear me, hear me! Heaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaar!"
+
+  Case 2
+    singingvoice = "\chr="+chr(34)+"monotone"+chr(34)
+        
+    Peedy.Speak singingvoice+"\\spd=130\\pit=65\Hap-\pit=65\p \pit=73\birth-\pit=65\day \spd=55\\pit=87\to \pit=82\peedy."
+
+    Peedy.Speak singingvoice+"\\spd=130\\pit=65\Hap-\pit=65\p \pit=73\birth-\pit=65\day \spd=55\\pit=98\to \pit=87\peedy."
+        
+    Peedy.Speak singingvoice+"\\spd=130\\pit=65\Hap-\pit=65\p \pit=131\birth-\pit=110\day, \spd=50\\pit=87\from \pit=82\Pee-\pit=73\dy."
+
+    Peedy.Speak singingvoice+"\\spd=130\\pit=117\Hap-\pit=117\p \pit=110\birth-\pit=87\day \spd=55\\pit=98\to \pit=87\peedy."
+
+    Peedy.Play "restpose"
+  End Select
+End Sub
+
+Sub JokeButton()
+'******************************************************
+'* This routine tells a joke.                   *
+'******************************************************
+  Peedy.Stop
+
+  'choose a random response
+  randomreply = Int((6 - 1 + 1) * Rnd + 1)
+    
+  Peedy.Speak "Yeah, of course that Peedy wants to tell a joke.|Peedy used slash joke, whoop-dee-fucking-doo.|OK, here it goes with new joking system! Ay.|How much times I have to request them. One joke, then no more. If you don't stop request at me, then I will use chainsaw when request with one time.|OK, here's a good one them within good watermelons.|I made stared if you did to request to me. Three requests for specials and then no more.|Request only for 2 jokes. Two jokes left, then no more.|Ok. Ok. Ok. I'll do the your request|Clicking the button will cause problems.|Isn't sounds good with Sydney voice? I'm like an BonziBUDDY.|10 requests left when I eat their classical cookie. Dame tu cosita, ah, ah. Dame tu cosita, ah, ah. Ay!"
+    
+Select Case randomreply
+Case 1
+    Peedy.Play "Announce"
+    Peedy.Speak "Hoe to be a average or hardest HTML editor?"
+    Peedy.Play "Explain"
+    Peedy.Speak "Basically, \emp\make your learning basics with drinking Coca-Cola Zero, you can double to learn more faster!"
+
+  Case 2
+    Peedy.Play "Explain"
+    Peedy.Speak "Did you if police officer and all policemans is dancing on the police station or everywhere?"
+    Peedy.Play "Congratulate"
+    Peedy.Speak "He wanted to be singer and stronger car pushing onto my direction. Of course, it's a pushancer and electric guitar aaaaher!"
+
+  Case 3
+    Peedy.Play "Explain"
+    Peedy.Speak "Why Michael Rosen is doing a hot food?"
+    Peedy.Play "Announce"
+    Peedy.Speak "Onto the mouth, ooooooomap. Make a click, then say, Noice."
+
+  Case 4
+     Peedy.Play "Uncertain"
+     Peedy.Speak "You know, but why Samsung SGH is for the publicans?"
+     Peedy.Play "Explain"
+     Peedy.Speak "The Ukrainians, Russians, Thailandians and United States people are using, with Samsung SGH-E250! This was isn't fair? Huh? Maybe you can use non-colour screen, buy the small cost of Samsung SGH-A100!"
+
+  Case 5
+     Peedy.Play "Explain"
+     Peedy.Speak "If Motorola has been cancelled in future year, and hosts have been left, what should you can do with your company built?"
+     Peedy.Play "Confused"
+     Peedy.Speak "Peeing and pooping on the every place, the audiences will say: Ugh, you are fucking stinky, calling the police to you! Parrot said: Oh no! I cannot believe it we danced the Motorola headquarters!"
+	 
+  Case 6
+    Peedy.Play "Explain"
+    Peedy.Speak "Why do need to wear the Covid 19 masks behind of ears?"
+    Peedy.Play "Announce"
+    Peedy.Speak "Because it's Corona cracking time!"
+  End Select
+    
+  Peedy.Play "Pleased"
+  Peedy.Speak "Ok. There's no requests for you.|I'm batman bro. Joke and joke. If you.|Fuuuuuu, nice new newspaper do know?|Sometimes, I dig some secrets likely maps or big coins on the sand! Arrr! I'm so greatness pirate!|I hope this joke isn't funny enough. If you want to subscribe our my channel, check out of the OnuteWORLD channel. And you will be prompted to subscribe, if you can't subscribe, you need a google account for the sure.|You can sure about that, just joke me again, I'd like you to make pancakes here.|Record with you.|Not be a surely says."
+  Peedy.Play "Blink"
+
+End Sub
+
+
+Sub Agent_Command (ByVal UserInput)
+  If UserInput.Name = "ACO" Then
+    Agent.PropertySheet.Visible = True
+  End If
+End Sub
+
+</script>
+
+
+</body></html>
